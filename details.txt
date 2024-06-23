@@ -1,0 +1,40 @@
+file uploader application eka run krna API eka 
+http://localhost:4000/api/v1/upload
+
+eken eka "File Path" eken URL eka hambenawa eka thmai addvehicleform eke tyna alburm URL array ekak wdyt add karanna ooone. 
+
+
+there should be in relevent car item 
+insurance
+_________
+
+{
+  "coverageType": "Comprehensive",
+  "companyName": "ABC Insurance Company",
+  "policyholderName": "John Doe",
+  "coveragePeriod": "1 year",
+  "vehicleDetails": {
+    "vehicleId": 1
+  },
+  "premiumAmount": "50000 LKR",
+  "policyExclusions": "Damage due to natural disasters",
+  "renewalDate": "2024-05-11",
+  "contactNumber": "+94 123456789",
+  "claimProcess": "Contact the insurance company's claims department."
+} 
+
+
+
+licence attributes(already created a form)  
+__________________
+
+{
+  "licenceId": 123, // Example licence ID
+  "vehicleId": {
+    "vehicleId": 14 // Example vehicle ID
+  },
+  "licenseNumber": "ABC123", // Example license number
+  "expiryDate": "2024-05-11", // Example expiry date
+  "issueDate": "2024-04-12", // Example issue date
+  "issueProvince": "Example Province" // Example issue province
+}

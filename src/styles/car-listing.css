@@ -1,0 +1,77 @@
+.car-listing {
+    padding: 0px;
+  }
+  
+  .car-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+  }
+  
+  .car-item {
+    margin-left:20px;
+    margin-top: 10px;
+    border: 2px solid #949ed4;
+    padding: 10px;
+    border-radius: 10px;
+    width: 230px;
+    text-align: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  }
+
+  .edit_button{
+    margin: 10px;
+    padding: 10px;
+    border: none;
+    color: white;
+    cursor: pointer;
+    border-radius: 5px;
+    width: 50px;
+    background-color:#223f8a;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif
+  }
+
+  .edit_button1{
+    width: 150px;
+    margin: 10px;
+    padding: 10px;
+    border: none;
+    color: white;
+    cursor: pointer;
+    border-radius: 5px;
+    background-color:#223f8a;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif
+  }
+  .delete_button{
+    margin: 10px;
+    padding: 10px;
+    border: none;
+    color: rgb(0, 0, 0);
+    cursor: pointer;
+    border-radius: 5px;
+    width: 60px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    background-color:rgb(235, 235, 24);
+  }
+  
+  .car-item img {
+    width: 100%;
+    height: auto;
+    
+  }
+  
+
+  
+  .car-item button:hover {
+    background-color: #74a5db;
+  }
+.car-listing-title{
+    margin-bottom: 10px;
+    align-items: center;
+    background-color: #223f8a;
+    color: white;
+    padding: 15px;
+    border-radius: 10px;
+    font-size:30px;
+    font-family:Arial, Helvetica, sans-serif;
+}

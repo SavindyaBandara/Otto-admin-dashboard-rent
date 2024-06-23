@@ -1,0 +1,120 @@
+/* Container for sidebar and main content */
+.container {
+    display: flex;
+    height: 100vh; /* Ensure the container takes up the full height of the viewport */
+  }
+  
+  /* Sidebar styles */
+  .sidebar {
+    background: #223f8a;
+    color: #fff;
+    height: 100vh; /* Make sidebar take up full height of viewport */
+    position: fixed; /* Sidebar remains fixed on the left side */
+    top: 0;
+    left: 0;
+    overflow-y: auto; /* Enable scrolling within the sidebar if content overflows */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    transition: width 0.3s ease; /* Smooth transition for width change */
+    z-index: 1000; /* Ensure the sidebar stays on top of other elements */
+  }
+  
+  /* Top section inside the sidebar */
+  .top_section {
+    display: flex;
+    align-items: center;
+   margin: 10px;
+  }
+  
+  /* Logo inside the sidebar */
+  .logo {
+    width: 200px; /* Adjust as needed */
+    height: 200px;
+    margin-right: 10px;
+  }
+  
+  /* Bars inside the sidebar */
+  .bars {
+    display: flex;
+    font-size: 30px;
+    cursor: pointer;
+  }
+  
+  /* Links inside the sidebar */
+  .link {
+    display: flex;
+    align-items: center;
+    color: #fff;
+    padding: 5px 15px;
+    gap: 15px;
+    text-decoration: none;
+    transition: background 0.5s, color 0.5s;
+  }
+  
+  .link:hover {
+    background: rgb(203, 203, 14);
+    color: #000;
+  }
+  
+  .active {
+    background: #fff;
+    color: #000;
+  }
+  
+  /* Icon and link text inside the sidebar */
+  .icon {
+    font-size: 20px;
+  }
+  
+  .link_text {
+    font-size: 15px;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+  
+  /* Main content area */
+  main {
+    margin-left: 300px; /* Adjust to match the sidebar width */
+    width: calc(100% - 300px); /* Main content takes the remaining space */
+    padding: 10px;
+    transition: margin-left 0.3s ease, width 0.3s ease; /* Smooth transition for margin and width change */
+  }
+  
+  /* Bottom section inside the sidebar */
+  .sidebar__bottom {
+    display: flex;
+    align-items: center;
+    color: #fff;
+    padding: 10px 15px;
+    gap: 15px;
+    cursor: pointer;
+    transition: background 0.5s, color 0.5s;
+  }
+  
+  /* Responsive styles */
+  @media (max-width: 768px) {
+    .sidebar {
+      width: 200px; /* Adjust width for smaller screens */
+    }
+  
+    main {
+      margin-left: 200px; /* Adjust margin for main content */
+      width: calc(100% - 200px); /* Adjust width for main content */
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .sidebar {
+      width: 150px; /* Adjust width for very small screens */
+    }
+  
+    main {
+      margin-left: 150px; /* Adjust margin for main content */
+      width: calc(100% - 150px); /* Adjust width for main content */
+    }
+  
+    .link_text {
+      font-size: 12px; /* Smaller text for smaller screens */
+    }
+  }
+  
